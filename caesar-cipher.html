@@ -16,65 +16,113 @@
 
 <body>
     <nav>
-        <div class="nav-wrapper" style="background-color: #74112b;">
-            <a href="#" class="brand-logo center">Caesar Cipher - Salih Şahin</a>
-        </div>
+        <div class="nav-wrapper" style="background-color: #74112b; padding: 0px 30px;">
+            <a href="#" class="brand-logo">Caesar Cipher</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="https://github.com/21819243/caesar-cipher-algorithm">Github Page</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="row text-center">
-        <div class="col s3">
-            <div class="row" style="margin-top: 50px;">
-                <h5 style="font-weight: bold;">Shifted alphabet</h5>
-                <p>New shifted alphabet will be displayed here...</p>
-                <div class="input-field col s12" id="shifted_alphabet_result" style="margin-top: 50px !important;"></div>
-            </div>
+      <div class="col s3">
+        <div class="row" style="margin-top: 50px;">
+          <h5 style="font-weight: bold;">Shifted alphabet</h5>
+          <p>New shifted alphabet will be displayed here...</p>
+          <div
+            class="input-field col s12"
+            id="shifted_alphabet_result"
+            style="margin-top: 50px !important;"
+          ></div>
         </div>
-        <div class="col s9">
-            <div class="col s2"></div>
-            <div class="col s8">
-                <div class="row">
-                    <div class="input-field col s12" style="margin-top: 50px !important;">
-                        <input placeholder="Hello" id="caesar_text" type="text" class="validate" />
-                        <label for="caesar_text">Your text</label>
-                    </div>
-                </div>
+      </div>
+      <div class="col s9">
+        <div class="col s2"></div>
+        <div class="col s8">
+          <div class="row">
+            <div
+              class="input-field col s12"
+              style="margin-top: 50px !important;"
+            >
+              <input
+                placeholder="Hello"
+                id="caesar_text"
+                type="text"
+                class="validate"
+              />
+              <label for="caesar_text">Your text</label>
+            </div>
+          </div>
 
-                <div class="row">
-                    <div class="input-field col s12" style="margin-top: 50px !important;">
-                        <input id="shift_amount" type="number" min="0" max="25" value="0" class="validate" />
-                        <label for="shift_amount">Shift Amount</label>
-                    </div>
-                </div>
-                <div class="row" style="margin-top: 50px !important;">
-                    <div class="col s3"></div>
-                    <div class="col s3">
-                        <button class="btn waves-effect waves-light" style="background-color: #74112b;" onclick="encrypt()" name="encryption" id="encryption">
+          <div class="row">
+            <div
+              class="input-field col s12"
+              style="margin-top: 50px !important;"
+            >
+              <input
+                id="shift_amount"
+                type="number"
+                min="0"
+                max="25"
+                value="0"
+                class="validate"
+              />
+              <label for="shift_amount">Shift Amount</label>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 50px !important;">
+            <div class="col s3"></div>
+            <div class="col s3">
+              <button
+                class="btn waves-effect waves-light"
+                style="background-color: #74112b;"
+                onclick="encrypt()"
+                name="encryption"
+                id="encryption"
+              >
                 ENCRYPTION
                 <i class="material-icons right">lock_outline</i>
               </button>
-                    </div>
+            </div>
 
-                    <div class="col s3">
-                        <button class="btn waves-effect waves-light" name="decryption" style="background-color: #74112b;" onclick="decrypt()" id="decryption">
+            <div class="col s3">
+              <button
+                class="btn waves-effect waves-light"
+                name="decryption"
+                style="background-color: #74112b;"
+                onclick="decrypt()"
+                id="decryption"
+              >
                 DECRYPTION
                 <i class="material-icons right">lock_open</i>
               </button>
-                    </div>
-                    <div class="col s3"></div>
-                </div>
+            </div>
+            <div class="col s3"></div>
+          </div>
 
-                <div class="row">
-                    <div class="input-field col s12" style="margin-top: 50px !important;">
-                        <input placeholder="Result will be displayed here..." id="result" type="text" class="validate" disabled />
-                        <label for="result">Result</label>
-                    </div>
-                </div>
+          <div class="row">
+            <div
+              class="input-field col s12"
+              style="margin-top: 50px !important;"
+            >
+              <input
+                placeholder="Result will be displayed here..."
+                id="result"
+                type="text"
+                class="validate"
+                disabled
+              />
+              <label for="result">Result</label>
             </div>
-            <div class="col s2">
-                <!-- Promo Content 3 goes here -->
-            </div>
+          </div>
         </div>
+        <div class="col s2">
+          <!-- Promo Content 3 goes here -->
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
